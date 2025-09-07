@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_2s_comp_tb.v,1757204231,verilog,,,,tb_ALU_2s_comp,,,,,,,,
+C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb.v,1757198913,verilog,,,,ALU_tb,,,,,,,,
+C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sources_1/new/ALU.v,1757197552,verilog,,C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sources_1/new/ALU_2s_comp.v,,ALU,,,,,,,,
+C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sources_1/new/ALU_2s_comp.v,1757203951,verilog,,C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sources_1/new/Full_Adder.v,,ALU_2s_comp,,,,,,,,
+C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sources_1/new/Full_Adder.v,1757196455,verilog,,C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_2s_comp_tb.v,,Full_Adder,,,,,,,,

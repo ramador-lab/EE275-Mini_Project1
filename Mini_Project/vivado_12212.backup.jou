@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Sep  6 21:28:06 2025
+# Process ID: 12212
+# Current directory: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27532 C:\Users\baaru\Documents\EE275\EE275-Mini_Project1\Mini_Project\Mini_Project.xpr
+# Log file: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/vivado.log
+# Journal file: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project\vivado.jou
+# Running On: barucan, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 16501 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Full_Adder_tb.tcl
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ALU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ALU_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim

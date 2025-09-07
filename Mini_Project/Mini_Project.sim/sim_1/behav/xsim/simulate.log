@@ -1,8 +1,6 @@
 Time resolution is 1 ps
-A=         0, Sum=         0, Cout=z
-A=         5, Sum=4294967291, Cout=z
-A=       100, Sum=4294967196, Cout=z
-A=4294967246, Sum=        50, Cout=z
-A=7fffffff, Sum=80000001, Cout=z
-A=80000000, Sum=80000000, Cout=z
-$stop called at time : 80 ns : File "C:/Users/baaru/Documents/EE275/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_2s_comp_tb.v" Line 64
+Time	 A	 B	 Sum	 Cout
+0	          0	          x	          0	 0
+12000	          5	          1	          0	 0
+25000	          5	          1	 4294967291	 0
+$finish called at time : 32 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_2s_comp_tb.v" Line 44

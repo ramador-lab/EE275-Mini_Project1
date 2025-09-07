@@ -1,51 +1,65 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 09/06/2025 03:08:15 PM
-// Design Name: 
-// Module Name: Full_Adder_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Testbench for Full_Adder
 //////////////////////////////////////////////////////////////////////////////////
 
+module Full_Adder_tb;
 
-module tb_full_adder;
+    // Testbench signals
+    reg clk;
+    reg rst;
+    reg A;
+    reg B;
+    reg Cin;
+    wire Sum;
+    wire Cout;
 
-reg A, B, Cin;
-wire Sum, Cout;
+    // Instantiate the Full_Adder
+    Full_Adder uut (
+        .clk(clk),
+        .rst(rst),
+        .A(A),
+        .B(B),
+        .Cin(Cin),
+        .Sum(Sum),
+        .Cout(Cout)
+    );
 
-// Instantiate the full adder
-Full_Adder full_add_sim (
-    .A(A),
-    .B(B),
-    .Cin(Cin),
-    .Sum(Sum),
-    .Cout(Cout)
-);
+    // Clock generator: 10ns period
+    always #5 clk = ~clk;
 
-initial begin
-    $display("A B Cin | Sum Cout");
-    A = 0; B = 0; Cin = 0; #10 $display("%b %b %b |  %b   %b", A,B,Cin,Sum,Cout);
-    A = 0; B = 0; Cin = 1; #10 $display("%b %b %b |  %b   %b", A,B,Cin,Sum,Cout);
-    A = 0; B = 1; Cin = 0; #10 $display("%b %b %b |  %b   %b", A,B,Cin,Sum,Cout);
-    A = 0; B = 1; Cin = 1; #10 $display("%b %b %b |  %b   %b", A,B,Cin,Sum,Cout);
-    A = 1; B = 0; Cin = 0; #10 $display("%b %b %b |  %b   %b", A,B,Cin,Sum,Cout);
-    A = 1; B = 0; Cin = 1; #10 $display("%b %b %b |  %b   %b", A,B,Cin,Sum,Cout);
-    A = 1; B = 1; Cin = 0; #10 $display("%b %b %b |  %b   %b", A,B,Cin,Sum,Cout);
-    A = 1; B = 1; Cin = 1; #10 $display("%b %b %b |  %b   %b", A,B,Cin,Sum,Cout);
-    $finish;
-end
+    // Stimulus
+    initial begin
+        // Initialize
+        clk = 0;
+        rst = 1;   // Start with reset asserted
+        A = 0; B = 0; Cin = 0;
+
+        // Hold reset for a bit
+        #12 rst = 0;  // Release reset
+
+        // Try all input combinations
+        #10 A=0; B=0; Cin=0;  
+        #10 A=0; B=0; Cin=1;  
+        #10 A=0; B=1; Cin=0;  
+        #10 A=0; B=1; Cin=1;  
+        #10 A=1; B=0; Cin=0;  
+        #10 A=1; B=0; Cin=1;  
+        #10 A=1; B=1; Cin=0;  
+        #10 A=1; B=1; Cin=1;  
+
+        // Apply reset again mid-simulation
+        #10 rst = 1;
+        #10 rst = 0;
+
+        // Finish
+        #20 $finish;
+    end
+
+    // Monitor signals
+    initial begin
+        $monitor("Time=%0t | rst=%b | A=%b B=%b Cin=%b || Sum=%b Cout=%b",
+                 $time, rst, A, B, Cin, Sum, Cout);
+    end
 
 endmodule
-

@@ -9,29 +9,36 @@
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
+// Description: Full Adder with clock and asynchronous reset
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module Full_Adder(
+    input  wire clk,     // Clock
+    input  wire rst,     // Active-high asynchronous reset
+    input  wire A,       // First input
+    input  wire B,       // Second input
+    input  wire Cin,     // Carry input
+    output reg  Sum,     // Registered sum output
+    output reg  Cout     // Registered carry output
+);
 
-    input A,       // First input
-    input B,       // Second input
-    input Cin,     // Carry input
-    output Sum,    // Sum output
-    output Cout    // Carry output
-    );
+    wire sum_comb;
+    wire cout_comb;
 
+    // Combinational logic
+    assign sum_comb  = A ^ B ^ Cin;                  
+    assign cout_comb = (A & B) | (B & Cin) | (A & Cin);
 
-
-assign Sum  = A ^ B ^ Cin;                // XOR for sum
-assign Cout = (A & B) | (B & Cin) | (A & Cin);  // Carry out    
+    // Sequential logic (clock + asynchronous reset)
+    always @(posedge clk) begin
+        if (rst) begin
+            Sum  <= 1'b0;
+            Cout <= 1'b0;
+        end else begin
+            Sum  <= sum_comb;
+            Cout <= cout_comb;
+        end
+    end
 
 endmodule

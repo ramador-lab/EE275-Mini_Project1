@@ -1,0 +1,37 @@
+    1  pwd
+    2  pwd
+    3  ls
+    4  cd Documents
+    5  clear
+    6  ls
+    7  cd EE275
+    8  clear
+    9  ls
+   10  cd MiniProject
+   11  cd Mini_Project/
+   12  clear
+   13  git clone https://github.com/ramador-lab/EE275-Mini_Project1.git
+   14  pwd
+   15  ls
+   16  clear
+   17  ls
+   18  pwd
+   19  cd ../
+   20  clear
+   21  ls
+   22  cd EE275-Mini_Project1/
+   23  clear
+   24  pwd
+   25  ls
+   26  git status
+   27  git add .
+   28  git status
+   29  git commit
+   30  git commit -m
+   31  git commit -m "Add and subtract added. Alu and two's compliment added in"
+   32  git config --global user.email "barucan@sjsu.edu"
+   33  git config --global user.name "Brian Arucan"
+   34  git commit -m "Add and subtract added. Alu and two's compliment added in"
+   35  git push
+   36  git status
+   37  history

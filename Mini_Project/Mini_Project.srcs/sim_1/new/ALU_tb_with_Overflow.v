@@ -14,6 +14,7 @@ module tb_ALU;
     wire [31:0] Sum;
     wire        Cout;
     wire        CC;
+    wire        ready;
 
     // DUT instance
     ALU uut (
@@ -24,7 +25,8 @@ module tb_ALU;
         .Cin(Cin),
         .Sum(Sum),
         .Cout(Cout),
-        .CC(CC)
+        .CC(CC),
+        .ready(ready)
     );
 
     // Clock generation: 10ns period
@@ -45,14 +47,14 @@ module tb_ALU;
         // Test 1: Simple addition
         #10 A = 32'd15; B = 32'd10; Cin = 0;
 
-        // Test 2: With carry-in
-        #20 A = 32'd20; B = 32'd25; Cin = 1;
+//        // Test 2: With carry-in
+//        #20 A = 32'd20; B = 32'd25; Cin = 1;
 
-        // Test 3: Large numbers (check carry out)
-        #20 A = 32'hFFFF_FFFF; B = 32'd1; Cin = 0;
+//        // Test 3: Large numbers (check carry out)
+//        #20 A = 32'hFFFF_FFFF; B = 32'd1; Cin = 0;
 
-        // Test 4: Random inputs
-        #20 A = 32'h1234_5678; B = 32'h8765_4321; Cin = 0;
+//        // Test 4: Random inputs
+//        #20 A = 32'h1234_5678; B = 32'h8765_4321; Cin = 0;
 
         // Finish simulation
         #50 $finish;

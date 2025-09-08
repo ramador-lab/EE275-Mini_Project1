@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sun Sep  7 15:54:52 2025
-# Process ID: 39780
+# Start of session at: Sun Sep  7 18:04:20 2025
+# Process ID: 35676
 # Current directory: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16172 C:\Users\baaru\Documents\EE275\EE275-Mini_Project1\Mini_Project\Mini_Project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10840 C:\Users\baaru\Documents\EE275\EE275-Mini_Project1\Mini_Project\Mini_Project.xpr
 # Log file: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/vivado.log
 # Journal file: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project\vivado.jou
 # Running On: barucan, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 16501 MB
@@ -15,15 +15,19 @@ open_project C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Min
 update_compile_order -fileset sources_1
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
-set_property top tb_Logical_Not [get_filesets sim_1]
+set_property top ALU [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_ALU [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sim_1
 launch_simulation
-source tb_Logical_Not.tcl
-relaunch_sim
-close_sim
 launch_simulation
-source tb_Logical_Not.tcl
-close_sim
+source tb_ALU.tcl
+relaunch_sim
+run 1 us

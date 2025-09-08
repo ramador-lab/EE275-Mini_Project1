@@ -15,7 +15,8 @@ module ALU_2s_comp(
     input  wire [31:0] B,      // 32-bit input
     input  wire        Cin,    // Initial carry in
     output reg  [31:0] Sum,    // 32-bit sum
-    output reg         Cout    // Final carry out
+    output reg         Cout,    // Final carry out
+    output wire        CC
 );
 
     wire [31:0] C;      // Internal carry from ALU
@@ -37,7 +38,8 @@ module ALU_2s_comp(
         .B(Bin),
         .Cin(Cin),
         .Sum(Sum_internal),
-        .Cout(Cout_internal)
+        .Cout(Cout_internal),
+        .CC(CC)
     );
 
     // Register outputs on clock

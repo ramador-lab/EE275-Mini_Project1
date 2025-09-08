@@ -1,6 +1,7 @@
 Time resolution is 1 ps
-Time	 A	 B	 Sum	 Cout
-0	          0	          x	          0	 0
-12000	          5	          1	          0	 0
-25000	          5	          1	 4294967291	 0
-$finish called at time : 32 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_2s_comp_tb.v" Line 44
+Test 1: A=00000000, C=1
+Test 2: A=ffffffff, C=0
+Test 3: A=aaaaaaaa, C=1
+Test 4: A=00000001, C=1
+Test 5: A=fffffffe, C=1
+$finish called at time : 70 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/Logical_Not_tb.v" Line 81

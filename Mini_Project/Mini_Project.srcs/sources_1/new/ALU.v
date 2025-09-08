@@ -20,10 +20,22 @@ module ALU (
     input  wire [31:0] B,     // 32-bit input
     input  wire        Cin,   // Initial carry in
     output wire [31:0] Sum,   // 32-bit sum
-    output wire        Cout   // Final carry out
+    output wire        Cout,   // Final carry out
+    output wire        CC
 );
 
     wire [31:0] C;  // Internal carry wires
+    
+
+    
+    Overflow_Underflow overunder (
+        .clk(clk),
+        .rst(rst),
+        .A(C[30]),  
+        .B(Cout),  
+        .CC(CC)  
+        
+    );
 
     // LSB full adder
     Full_Adder fa0 (

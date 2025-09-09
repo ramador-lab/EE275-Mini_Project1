@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sun Sep  7 18:04:20 2025
-# Process ID: 35676
+# Start of session at: Tue Sep  9 16:06:57 2025
+# Process ID: 17152
 # Current directory: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10840 C:\Users\baaru\Documents\EE275\EE275-Mini_Project1\Mini_Project\Mini_Project.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17816 C:\Users\baaru\Documents\EE275\EE275-Mini_Project1\Mini_Project\Mini_Project.xpr
 # Log file: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/vivado.log
 # Journal file: C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project\vivado.jou
 # Running On: barucan, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 16501 MB
@@ -27,14 +27,9 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:15 . Memory (MB): peak = 1739.438 ; gain = 197.078
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1767.562 ; gain = 313.977
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Sep  7 18:09:53 2025...
-ces_1
-set_property top tb_ALU [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
@@ -57,48 +52,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE27
 INFO: [VRFC 10-311] analyzing module Overflow_Underflow
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_ALU
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log"
-INFO: [Common 17-41] Interrupt caught. Command should exit soon.
-Vivado Simulator v2022.2
-Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.Overflow_Underflow
-Compiling module xil_defaultlib.Full_Adder
-Compiling module xil_defaultlib.ALU_default
-Compiling module xil_defaultlib.tb_ALU
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_ALU_behav
-INFO: [Common 17-344] 'run_program' was cancelled
-INFO: [Vivado 12-5357] 'elaborate' step aborted
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1784.102 ; gain = 0.000
-INFO: [Common 17-344] 'launch_simulation' was cancelled
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_ALU_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_ALU
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log"
@@ -118,7 +72,7 @@ Compiling module xil_defaultlib.ALU_default
 Compiling module xil_defaultlib.tb_ALU
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_ALU_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -136,26 +90,19 @@ source tb_ALU.tcl
 #   }
 # }
 # run 1000ns
-t=0 | A=00000000 B=00000000 Cin=0 || Sum=xxxxxxxx Cout=x CC=0
-t=5000 | A=00000000 B=00000000 Cin=0 || Sum=00000000 Cout=0 CC=0
-t=22000 | A=0000000f B=0000000a Cin=0 || Sum=00000000 Cout=0 CC=0
-t=25000 | A=0000000f B=0000000a Cin=0 || Sum=00000005 Cout=0 CC=0
-t=35000 | A=0000000f B=0000000a Cin=0 || Sum=00000011 Cout=0 CC=0
-t=42000 | A=00000014 B=00000019 Cin=1 || Sum=00000011 Cout=0 CC=0
-t=45000 | A=00000014 B=00000019 Cin=1 || Sum=00000010 Cout=0 CC=0
-t=55000 | A=00000014 B=00000019 Cin=1 || Sum=00000036 Cout=0 CC=0
-t=62000 | A=ffffffff B=00000001 Cin=0 || Sum=00000036 Cout=0 CC=0
-t=65000 | A=ffffffff B=00000001 Cin=0 || Sum=ffffffcc Cout=0 CC=0
-t=75000 | A=ffffffff B=00000001 Cin=0 || Sum=ffffff98 Cout=0 CC=0
-t=82000 | A=12345678 B=87654321 Cin=0 || Sum=ffffff98 Cout=0 CC=0
-t=85000 | A=12345678 B=87654321 Cin=0 || Sum=95511597 Cout=0 CC=0
-t=95000 | A=12345678 B=87654321 Cin=0 || Sum=91199189 Cout=0 CC=0
-t=105000 | A=12345678 B=87654321 Cin=0 || Sum=999999b9 Cout=0 CC=0
-t=115000 | A=12345678 B=87654321 Cin=0 || Sum=99999999 Cout=0 CC=0
-$finish called at time : 132 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" Line 60
+t=0 | A=00000000 B=00000000 Cin=0 || Sum=00000000 Cout=0 
+t=22000 | A=0000000f B=0000000a Cin=0 || Sum=00000000 Cout=0 
+t=25000 | A=0000000f B=0000000a Cin=0 || Sum=00000019 Cout=0 
+t=42000 | A=00000014 B=00000019 Cin=1 || Sum=00000019 Cout=0 
+t=45000 | A=00000014 B=00000019 Cin=1 || Sum=0000002e Cout=0 
+t=62000 | A=ffffffff B=00000001 Cin=0 || Sum=0000002e Cout=0 
+t=65000 | A=ffffffff B=00000001 Cin=0 || Sum=00000000 Cout=1 
+t=82000 | A=12345678 B=87654321 Cin=0 || Sum=00000000 Cout=1 
+t=85000 | A=12345678 B=87654321 Cin=0 || Sum=99999999 Cout=0 
+$finish called at time : 132 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" Line 58
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ALU_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1860.480 ; gain = 72.805
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1841.426 ; gain = 37.316
 relaunch_sim
 Command: launch_simulation -step compile -simset sim_1 -mode behavioral
 INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
@@ -206,12 +153,291 @@ Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_ALU_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 Time resolution is 1 ps
-t=0 | A=00000000 B=00000000 Cin=0 || Sum=xxxxxxxx Cout=x CC=0
-t=5000 | A=00000000 B=00000000 Cin=0 || Sum=00000000 Cout=0 CC=0
-t=22000 | A=0000000f B=0000000a Cin=0 || Sum=00000000 Cout=0 CC=0
-t=25000 | A=0000000f B=0000000a Cin=0 || Sum=00000005 Cout=0 CC=0
-t=35000 | A=0000000f B=0000000a Cin=0 || Sum=00000011 Cout=0 CC=0
-t=45000 | A=0000000f B=0000000a Cin=0 || Sum=00000019 Cout=0 CC=0
-$finish called at time : 72 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" Line 60
-relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1860.480 ; gain = 0.000
-run 1 us
+t=0 | A=00000000 B=00000000 Cin=0 || Sum=00000000 Cout=0 
+t=22000 | A=0000000f B=0000000a Cin=0 || Sum=00000000 Cout=0 
+t=25000 | A=0000000f B=0000000a Cin=0 || Sum=00000019 Cout=0 
+t=42000 | A=00000014 B=00000019 Cin=1 || Sum=00000019 Cout=0 
+t=45000 | A=00000014 B=00000019 Cin=1 || Sum=0000002e Cout=0 
+t=62000 | A=ffffffff B=00000001 Cin=0 || Sum=0000002e Cout=0 
+t=65000 | A=ffffffff B=00000001 Cin=0 || Sum=00000000 Cout=1 
+t=82000 | A=12345678 B=87654321 Cin=0 || Sum=00000000 Cout=1 
+t=85000 | A=12345678 B=87654321 Cin=0 || Sum=99999999 Cout=0 
+t=102000 | A=80000000 B=ffffffff Cin=0 || Sum=99999999 Cout=0 
+t=105000 | A=80000000 B=ffffffff Cin=0 || Sum=7fffffff Cout=1 
+$finish called at time : 152 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" Line 60
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1841.426 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  9 16:49:30 2025...
+Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_ALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/Full_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'ready' on this module [C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_ALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/Full_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ALU
+ERROR: [VRFC 10-8414] extra comma in port association list is not allowed [C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v:28]
+ERROR: [VRFC 10-8530] module 'tb_ALU' is ignored due to previous errors [C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v:6]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_ALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/Full_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'CC' is not declared [C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v:64]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_ALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/Full_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ALU
+WARNING: [VRFC 10-3522] missing or empty argument against format specification for 'monitor' [C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v:63]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Full_Adder
+Compiling module xil_defaultlib.ALU_default
+Compiling module xil_defaultlib.tb_ALU
+ERROR: [XSIM 43-3185] "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" Line 63. Number of arguments are less than format specifiers. 
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_ALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/Full_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Full_Adder
+Compiling module xil_defaultlib.ALU_default
+Compiling module xil_defaultlib.tb_ALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_ALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_ALU_behav -key {Behavioral:sim_1:Functional:tb_ALU} -tclbatch {tb_ALU.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_ALU.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+t=0 | A=00000000 B=00000000 Cin=0 || Sum=00000000 Cout=0 
+t=22000 | A=0000000f B=0000000a Cin=0 || Sum=00000000 Cout=0 
+t=25000 | A=0000000f B=0000000a Cin=0 || Sum=00000019 Cout=0 
+$finish called at time : 72 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_ALU_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1820.496 ; gain = 41.730
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_ALU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sources_1/new/Full_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ALU
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_ALU'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_ALU_behav xil_defaultlib.tb_ALU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Full_Adder
+Compiling module xil_defaultlib.ALU_default
+Compiling module xil_defaultlib.tb_ALU
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_ALU_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+t=0 | A=00000000 B=00000000 Cin=0 || Sum=00000000 Cout=0 
+t=22000 | A=0000000f B=0000000a Cin=0 || Sum=00000000 Cout=0 
+t=25000 | A=0000000f B=0000000a Cin=0 || Sum=00000019 Cout=0 
+t=42000 | A=00000014 B=00000019 Cin=1 || Sum=00000019 Cout=0 
+t=45000 | A=00000014 B=00000019 Cin=1 || Sum=0000002e Cout=0 
+t=62000 | A=ffffffff B=00000001 Cin=0 || Sum=0000002e Cout=0 
+t=65000 | A=ffffffff B=00000001 Cin=0 || Sum=00000000 Cout=1 
+t=82000 | A=12345678 B=87654321 Cin=0 || Sum=00000000 Cout=1 
+t=85000 | A=12345678 B=87654321 Cin=0 || Sum=99999999 Cout=0 
+$finish called at time : 132 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" Line 57
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  9 16:19:38 2025...

@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+t=0 | A=00000000 B=00000000 Cin=0 || Sum=00000000 Cout=0 
+t=22000 | A=0000000f B=0000000a Cin=0 || Sum=00000000 Cout=0 
+t=25000 | A=0000000f B=0000000a Cin=0 || Sum=00000019 Cout=0 
+t=42000 | A=00000014 B=00000019 Cin=1 || Sum=00000019 Cout=0 
+t=45000 | A=00000014 B=00000019 Cin=1 || Sum=0000002e Cout=0 
+t=62000 | A=ffffffff B=00000001 Cin=0 || Sum=0000002e Cout=0 
+t=65000 | A=ffffffff B=00000001 Cin=0 || Sum=00000000 Cout=1 
+t=82000 | A=12345678 B=87654321 Cin=0 || Sum=00000000 Cout=1 
+t=85000 | A=12345678 B=87654321 Cin=0 || Sum=99999999 Cout=0 
+t=102000 | A=80000000 B=ffffffff Cin=0 || Sum=99999999 Cout=0 
+t=105000 | A=80000000 B=ffffffff Cin=0 || Sum=7fffffff Cout=1 
+$finish called at time : 152 ns : File "C:/Users/baaru/Documents/EE275/EE275-Mini_Project1/Mini_Project/Mini_Project.srcs/sim_1/new/ALU_tb_with_Overflow.v" Line 60

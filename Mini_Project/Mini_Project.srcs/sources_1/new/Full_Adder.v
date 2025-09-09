@@ -14,31 +14,18 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module Full_Adder(
-    input  wire clk,     // Clock
-    input  wire rst,     // Active-high asynchronous reset
-    input  wire A,       // First input
-    input  wire B,       // Second input
-    input  wire Cin,     // Carry input
-    output reg  Sum,     // Registered sum output
-    output reg  Cout     // Registered carry output
+//    input  wire clk,     // Clock
+//    input  wire rst,     // Active-high asynchronous reset
+    input   A,       // First input
+    input   B,       // Second input
+    input   Cin,     // Carry input
+    output  Sum,     // Registered sum output
+    output  Cout     // Registered carry output
 );
 
-    wire sum_comb;
-    wire cout_comb;
 
     // Combinational logic
-    assign sum_comb  = A ^ B ^ Cin;                  
-    assign cout_comb = (A & B) | (B & Cin) | (A & Cin);
-
-    // Sequential logic (clock + asynchronous reset)
-    always @(posedge clk) begin
-        if (rst) begin
-            Sum  <= 1'b0;
-            Cout <= 1'b0;
-        end else begin
-            Sum  <= sum_comb;
-            Cout <= cout_comb;
-        end
-    end
+    assign Sum  = A ^ B ^ Cin;                  
+    assign Cout = (A & B) | (B & Cin) | (A & Cin);
 
 endmodule
